@@ -9,15 +9,29 @@
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container-fluid full  bg-primary area-size">
-        <div class="container bg-danger text-white "> <p class="display-4 text-center" > computer question answer</p>
+    
+    <div id="home" class="container-fluid full  bg-primary area-size"> 
+      
+        <div id="start" class="container bg-danger text-white ">
+            <nav>
+                <ul class="nav-bars">
+
+                    <li class="d-inline mr-5 li "><a href="#home">home</a></li>
+                    <li class="d-inline mr-5 li"><a href="#fill">fill in blacks</a></li>
+                    <li class="d-inline mr-5 li"><a href="#question"> question answer</a></li>
+                </ul>
+                
+            </nav>
+            <br><br><br><br>
+
+              <p class="display-4 text-center" > computer question answer</p>
            
 
                 <div class="conent   d-flex justify-content-center align-content-center flex-column ">
                     <!--10th question -->
 <div class="conent-answer ">
 
-    <div class="question  bg-info p width-conent"><p class="h2 pl-3 text-center">1.	which of the following menus is used to open the library panel?</p>
+    <div  class="question  bg-info p width-conent"><p class="h2 pl-3 text-center">1.	which of the following menus is used to open the library panel?</p>
     </div>
   
     <div class="answer bg-success p-5   letter-spacing width-conent text-capitalize"><p class="h1 pl-3 "> 
@@ -31,7 +45,7 @@
         <div class="question  bg-info p width-conent"><p class="h1 pl-3 text-center">2.A red color marker in the timeline is called the  </p>
         </div>
         <br>
-        <div class="answer bg-success p-5   letter-spacing width-conent text-capitalize"><p class="h1 pl-3 "> 
+        <div  class="answer bg-success p-5   letter-spacing width-conent text-capitalize"><p class="h1 pl-3 "> 
             Answer: playhead.
             </p></div>
         </div>
@@ -64,7 +78,7 @@
                         </p></div>
                     </div>
                     <br>
-                    <div class="conent-answer ">
+                    <div  class="conent-answer ">
 
                         <div class="question bg-info p width-conent"><p class="h2 pl-3 text-center">5.which control is used to move or resize the controls placed on the form ?</p>
                         </div>
@@ -88,6 +102,7 @@
                             <br>
                             <div class="conent-answer ">
 
+
                                 <div class="question bg-info p width-conent"><p class="h2 pl-3 text-center">7.what is  the extension  of a photoshop file?</p>
                                 </div>
                                 <br>
@@ -95,16 +110,104 @@
                                     Answer: .psd
                                     </p></div>
                                     
+
                                 </div>
+                                <br>
+                                <div id="fill" class="fillinblacks bg-secondary">
+                                    <div class="heading ml-4">
+                                        <p >fill in the blacks </p>
+                                    </div>
+                                   <ol>
+                                       <li>	The  <span>conditional</span> operator can used as an alternative the if…else statement </li>
+                                       <li>To hide a layer ,click the  <span>eye</span>   icon beside the thumbnail of the that layer.</li>
+                                       <li>variables are declare using the  <span>DIM</span> word.</li>
+                                       <li>The <span>label</span>   controls is used to display text on the </li>
+                                   </ol>
+
+                                </div>
+                                <br>
+                                <div id="question" class="fillinblacks bg-secondary">
+                                    <div class="heading ml-4">
+                                        <p >question and answer </p>
+                                    </div>
+                                   <ol>
+                                       <li>	write a short note on the flash line? </li>
+                                       <li>what are the different ways of selecting frames in the timeline window?</li>
+                                       <li>explain the usage of condition operator with an example?</li>
+                                       <li>How is frame by frame animation different from tweened animation ? </li>
+                                       <li>why is it important to determine the procedure and associativity operators ?</li>
+                                       <li>what is layer ? how can you rename a layer </li>
+                                       <li>describe the two forms in which the increment operator can be used ?</li>
+                                   </ol>
+
+                                </div>
+
 </div>
-<div class="footer text-center r">
+<br>
+<a href="#start" class="btn btn-block btn-primary">start</a>
+<div id="ended" class="footer text-center r">
     <h1>thank you for visting web page </h1>
- 
 </div>
         </div>
     </div>
 </body>
 <style>
+
+    .nav-bars{
+        background-color: blueviolet;
+  font-size: 30px;
+text-decoration: none;
+position: fixed;
+top: 0;
+
+
+
+    }
+    .li{
+        transition: all 700ms linear;
+        
+    }
+    .li:hover{
+        background-color: red;
+    }
+    a{
+       text-decoration: none;
+       color: rgb(224, 219, 219);
+    }
+    a:hover{
+        text-decoration: none;
+        color: white;
+    }
+    .active{
+        color: white;
+    }
+    span{
+        color: rgb(65, 225, 217);
+        font-weight: 800;
+    }
+    .fillinblacks{
+        font-size: 40px;
+    }
+    .fillinblacks>ol{
+        margin-left: 15px;
+    }
+    nav{
+        width: 100%;
+    }
+
+    ul{
+        width: 100%;
+    }
+    li{
+        width: 50%;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .text-decrotion:hover{
+        text-decoration: none;
+
+    }
 @media (max-width:500px) {
     .size{
         font-size: 10px;
